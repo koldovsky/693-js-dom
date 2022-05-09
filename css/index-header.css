@@ -3,6 +3,14 @@
     padding: 5px;
 }
 
+@media (min-width: 600px) {
+
+    .header-nav > .container {
+        display: flex;
+    }
+
+}
+
 .header-nav__logo {
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -13,9 +21,24 @@
     font-size: 56px;
 }
 
+.header-nav__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+
+    .header-nav__menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1;
+    }
+    
+}
+
 .header-nav__menu-item {
     text-decoration: none;
-    display: block;
     color: var(--main-text-color);
 }
 
@@ -28,5 +51,9 @@
     background-size: cover;
     background-position: 50% 50%;
     min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
