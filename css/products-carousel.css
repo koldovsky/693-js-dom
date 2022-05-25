@@ -1,0 +1,10 @@
+.main-products-carousel {
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-products-carousel .slide {
+    display: flex;
+    justify-content: space-around;
+}
