@@ -38,19 +38,43 @@
         </div>
         <section class="main-products container">
           <h2 id="products" class="main-products__h2">Products</h2>
+          <input type="text" value="USD" class="currency"><button class="convert">Convert</button>
           <div class="main-products__list"> </div>
         </section>
       </main>
       <footer id="contacts" class="footer container">
         <h2>Contact Us</h2>
-        <form action="" class="footer__contacts">
-          <input type="text" name="name" placeholder="name" />
-          <input type="email" name="email" placeholder="email" />
-          <button class="button button-card">Submit</button>
+        <form class="contact-form-formspree" action="https://formspree.io/f/xeqpelev" method="POST">
+          <label
+            >Your name:
+            <input type="text" name="user-name" placeholder="User Name" />
+          </label>
+          <label
+            >Your email:
+            <input type="email" name="user-email" placeholder="User Email" />
+          </label>
+          <input type="submit" />
         </form>
+        <form class="contact-form-nodejs" action="contact" method="POST">
+          <label
+            >Your name:
+            <input type="text" name="user-name" placeholder="User Name" />
+          </label>
+          <label
+            >Your email:
+            <input type="email" name="user-email" placeholder="User Email" />
+          </label>
+          <label>Message:
+            <textarea name="message" cols="30" rows="10"></textarea>
+          </label>
+          <input type="submit" />
+        </form>
+        <div class="contact-form-status"></div>
       </footer>
       <script src="js/clock.js"></script>
       <script src="js/product-list.js"></script>
       <script src="js/products-carousel.js"></script>
+      <script src="js/contact-form-formpsree.js"></script>
+      <script src="js/contact-form-nodejs.js"></script>
 </body>
 </html>
